@@ -36,7 +36,9 @@ fetch(EPITICKET_URL)
                     <p class="card-text">${concert.price}€ - ${
         concert.time.split('T')[0]
       }</p>
-                    <a href="./details.html?concertId=${concert._id}" class="btn btn-primary">Vai ai dettagli</a>
+                    <a href="./details.html?concertId=${
+                      concert._id
+                    }" class="btn btn-primary">Vai ai dettagli</a>
                 </div>
             </div>
         `
