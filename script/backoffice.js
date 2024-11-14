@@ -39,6 +39,11 @@ form.addEventListener('submit', (e) => {
       if (response.ok) {
         // l'oggetto è stato salvato correttamente nel DB!
         alert('EVENTO SALVATO!')
+        // svuotiamo il form
+        nameInput.value = ''
+        descriptionInput.value = ''
+        priceInput.value = ''
+        timeInput.value = ''
       } else {
         // molto probabilmente qualcosa non va bene nel tuo oggetto
         throw new Error('Errore nel salvataggio del concerto')
